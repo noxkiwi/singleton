@@ -1,0 +1,40 @@
+{
+  "name": "noxkiwi/singleton",
+  "description": "I am the noxkiwi singleton implementation that also uses the Environment. Which, again, is a singleton implementation. Crazy.",
+  "version": "1.0.0",
+  "type": "package",
+  "license": "proprietary",
+  "keywords": [
+    "singleton"
+  ],
+  "homepage" : "https://nox.kiwi/",
+  "time"     : "2021-01-20",
+  "authors": [
+    {
+      "name"     : "Jan Nox",
+      "email"    : "jan.nox@pm.me",
+      "homepage" : "https://nox.kiwi",
+      "role"     : "Lead Developer"
+    }
+  ],
+  "require": {
+    "php"          : ">=7.4.0",
+    "noxkiwi/core" : "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "support": {
+    "email"  : "jan.nox@pm.me",
+    "issues" : "https://nox.kiwi/issues/singleton",
+    "forum"  : "https://nox.kiwi/forum/singleton",
+    "wiki"   : "https://nox.kiwi/wiki/singleton",
+    "docs"   : "https://noxkiwisingleton.rtfd.io/",
+    "source" : "https://bitbucket.org/noxkiwi/singleton"
+  },
+  "autoload": {
+    "psr-4": {
+      "noxkiwi\\singleton\\": "backend/class/"
+    }
+  }
+}
