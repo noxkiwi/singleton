@@ -4,7 +4,12 @@ namespace noxkiwi\singleton;
 use noxkiwi\core\Environment;
 use noxkiwi\core\Exception\ConfigurationException;
 use noxkiwi\singleton\Exception\SingletonException;
+use function class_exists;
+use function end;
+use function explode;
 use function func_get_args;
+use function strtolower;
+use function ucfirst;
 use const E_ERROR;
 
 /**
