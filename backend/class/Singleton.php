@@ -9,7 +9,6 @@ use function end;
 use function explode;
 use function func_get_args;
 use function strtolower;
-use function ucfirst;
 use const E_ERROR;
 
 /**
@@ -118,7 +117,7 @@ abstract class Singleton
         } catch (ConfigurationException $exception) {
             throw new SingletonException($exception->getMessage(), E_ERROR);
         }
-        $className = $config['driver'] . ucfirst($type);
+        $className = $config['driver'];
         if (! class_exists($className)) {
             throw new SingletonException("$type '$identifier' is configured to use driver '$className' which cannot be found.", E_ERROR);
         }
